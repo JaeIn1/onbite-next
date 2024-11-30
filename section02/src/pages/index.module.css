@@ -1,0 +1,12 @@
+.h1 {
+  color: blue;
+}
+
+.updateBtn {
+  background: #2493ff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
