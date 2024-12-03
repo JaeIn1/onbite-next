@@ -9,7 +9,8 @@ export default async function Page({
   };
 }) {
   const response = await fetch(
-    `${process.env.NEXT_PUBLIC_DATABASE_URL}book/search?q=${searchParams.q}`
+    `${process.env.NEXT_PUBLIC_DATABASE_URL}book/search?q=${searchParams.q}`,
+    { cache: "force-cache" }
   );
 
   if (!response.ok) {
