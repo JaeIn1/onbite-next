@@ -1,3 +1,6 @@
+[블로그]
+* https://velog.io/@ysy06053/series/Next.js-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%95%8C%EA%B8%B0
+
 # page-router
 * 배포 링크입니다.
 * SSR , SSG , ISR을 사용하여 구현했습니다.
