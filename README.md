@@ -1,3 +1,6 @@
+[블로그]
+* https://velog.io/@ysy06053/series/Next.js-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%95%8C%EA%B8%B0
+
 # page-router
 * 배포 링크입니다.
 * SSR , SSG , ISR을 사용하여 구현했습니다.
@@ -7,3 +10,15 @@
 * https://onebite-books-page-kappa-three.vercel.app/
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/aba99a9e-7330-4914-96f8-3ef4ca8cf9fe">
+
+
+
+
+# app-router
+* 배포 링크입니다.
+* SSR , SSG , ISR을 사용하여 구현했습니다.
+* 클라이언트 컴포넌트 , 서버 컴포넌트 , 캐시 기능을 활용해 빠른 렌딩 속도로 구현
+* 이미지 최적화(webp , 레이지 로딩 , 이미지 크기 조절)을 활용해 최적화
+* https://onebite-books-b15n6i3dj-jaeins-projects.vercel.app/
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/d59f4bed-8e30-4870-8e0d-4a6b5d286d63">
