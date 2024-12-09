@@ -4,7 +4,7 @@ import { BookData } from "@/types";
 import Delay from "@/util/delay";
 import { Suspense } from "react";
 
-export async function SearchResult({ q }: { q: string }) {
+async function SearchResult({ q }: { q: string }) {
   await Delay(1500);
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_DATABASE_URL}book/search?q=${q}`,
@@ -26,7 +26,24 @@ export async function SearchResult({ q }: { q: string }) {
   );
 }
 
-export default async function Page({
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: { q?: string };
+}) {
+  const { q } = searchParams;
+  return {
+    title: `${q} : 힌입북스`,
+    description: `${q}의 검색 결과입니다`,
+    openGraph: {
+      title: `${q} 한입 북스`,
+      description: `${q} 한입 북스에 등록된 도서를 만나보세요`,
+      images: [`/thumbnail.png`],
+    },
+  };
+}
+
+export default function Page({
   searchParams,
 }: {
   searchParams: {

@@ -24,8 +24,8 @@ export default function DeleteReviewButton({
 
   return (
     <form action={formAction} ref={formRef}>
-      <input name="reviewId" value={reviewId} hidden />
-      <input name="bookId" value={bookId} hidden />
+      <input name="reviewId" value={reviewId} hidden readOnly />
+      <input name="bookId" value={bookId} hidden readOnly />
       <div onClick={() => formRef.current?.requestSubmit()}>
         {isPending ? "..." : "삭제하기"}
       </div>
